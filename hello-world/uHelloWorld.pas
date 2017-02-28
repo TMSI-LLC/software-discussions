@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TMainForm = class(TForm)
     Button1: TButton;
     procedure Button1Click(Sender: TObject);
   private
@@ -17,13 +17,13 @@ type
   end;
 
 var
-  Form1: TForm1;
+  MainForm: TMainForm;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TMainForm.Button1Click(Sender: TObject);
 begin
   MessageDlg('Hello, World!',mtInformation,[mbok],0);
 end;
